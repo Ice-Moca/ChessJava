@@ -9,7 +9,7 @@ public class Position {
 	
 	int[] Alpabet = {1,2,3,4,5,6,7,8};
 	
-	Position(String name, char pos1, char pos2){
+	Position(char pos1, char pos2){
 		this.pos1=pos1;
 		this.pos2=pos2;
 		this.index_x = (int) (pos1 - 'a');
