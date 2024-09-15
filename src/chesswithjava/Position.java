@@ -17,7 +17,7 @@ public class Position {
 	}
 	
 	public boolean equals(Position position) {
-		if((this.index_x==position.index_x)&&this.index_y==position.index_y) {
+		if((this.index_x==position.index_x)&&(this.index_y==position.index_y)) {
 			return true;
 		}
 		return false;
