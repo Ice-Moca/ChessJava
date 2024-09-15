@@ -12,10 +12,14 @@ public class Position {
 	Position(char pos1, char pos2){
 		this.pos1=pos1;
 		this.pos2=pos2;
-		this.index_x = (int) (pos1 - 'a');
-		this.index_y = (int) (pos2-'0');
+		this.index_x = (int) (pos1-'a')-1;
+		this.index_y = (int) (pos2-'0')-1;
 	}
 	
-	
-	
+	public boolean equals(Position position) {
+		if((this.index_x==position.index_x)&&this.index_y==position.index_y) {
+			return true;
+		}
+		return false;
+	}
 }
